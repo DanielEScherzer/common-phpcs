@@ -1,0 +1,11 @@
+<?php
+declare( strict_types = 1 );
+
+function usesDeprecated() {
+	lcg_value();
+}
+
+#[FirstAttrib, SecondAttrib]
+function doNothing() {
+	$a = true;
+}

@@ -1,0 +1,14 @@
+FILE: {dir}/data/MediaWikiRulesViolated.php
+--------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 3 LINES
+--------------------------------------------------------------------------------
+ 13 | ERROR | [ ] Missing return type or @return tag in function comment
+    |       |     (MediaWiki.Commenting.FunctionComment.MissingReturn)
+ 14 | ERROR | [x] Expected 0 blank lines after opening function brace; 1 found
+    |       |     (Squiz.WhiteSpace.FunctionOpeningBraceSpace.SpacingAfter)
+ 18 | ERROR | [x] Function closing brace must go on the next line following the
+    |       |     body; found 1 blank lines before brace
+    |       |     (PSR2.Methods.FunctionClosingBrace.SpacingBeforeClose)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------

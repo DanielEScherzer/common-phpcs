@@ -1,0 +1,35 @@
+FILE: {dir}/data/AttributeAlignment/wrong.php
+--------------------------------------------------------------------------------
+FOUND 0 ERRORS AND 14 WARNINGS AFFECTING 14 LINES
+--------------------------------------------------------------------------------
+  8 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 13 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 15 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 20 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 22 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 25 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 28 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 31 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 34 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 38 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 44 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 45 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 50 | WARNING | [x] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 55 | WARNING | [ ] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 13 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------

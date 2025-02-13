@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ruleset>
+	<rule ref="./src"/>
+	<file>.</file>
+	<arg name="extensions" value="php"/>
+	<arg name="encoding" value="UTF-8"/>
+	<exclude-pattern type="relative">^src/Tests/data/*</exclude-pattern>
+</ruleset>

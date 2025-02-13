@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<ruleset name="DanielEScherzer">
+	<description>Daniel's coding standard, based on MediaWiki but for non-MW code.</description>
+
+	<!-- Default: include MediaWiki's rules -->
+	<rule ref="MediaWiki">
+		<!-- Exclude some that are not applicable to non-MW code -->
+		<exclude name="MediaWiki.Usage.DbrQueryUsage" />
+		<exclude name="MediaWiki.Usage.DeprecatedConstantUsage" />
+		<exclude name="MediaWiki.Usage.DeprecatedGlobalVariables" />
+		<exclude name="MediaWiki.Usage.ExtendClassUsage" />
+		<exclude name="MediaWiki.Usage.SuperGlobalsUsage" />
+		<exclude name="MediaWiki.VariableAnalysis.MisleadingGlobalNames" />
+
+		<!-- Not yet updated for PHPUnit's switch to attributes -->
+		<exclude name="MediaWiki.Commenting.MissingCovers" />
+	</rule>
+
+	<!-- Override some options to drop MW-specific parts -->
+	<rule ref="MediaWiki.NamingConventions.ValidGlobalName">
+		<!-- With no prefixes configured, sniff will do nothing but be available
+			if I want to enable it for a project -->
+		<properties>
+			<property name="allowedPrefixes" type="array" value="" />
+		</properties>
+	</rule>
+
+	<rule ref="MediaWiki.NamingConventions.PrefixedGlobalFunctions">
+		<!-- With no prefixes configured, sniff will do nothing but be available
+			if I want to enable it for a project -->
+		<properties>
+			<property name="allowedPrefixes" type="array" value="" />
+		</properties>
+	</rule>
+
+	<!-- MediaWiki sets the line limit to 120, bring back to 80 -->
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property name="lineLimit" value="80" />
+		</properties>
+	</rule>
+
+	<!-- Always have a trailing comma in multi-line arrays -->
+	<rule ref="MediaWiki.Arrays.TrailingComma">
+		<properties>
+			<property name="multiLine" value="true" />
+		</properties>
+	</rule>
+
+	<!-- Some extra rules that seem useful from PHPCS core -->
+	<rule ref="Generic.PHP.DeprecatedFunctions" />
+
+	<!-- SlevomatCodingStandard rules -->
+	<rule ref="SlevomatCodingStandard.Attributes.AttributesOrder">
+		<properties>
+			<property name="orderAlphabetically" value="true" />
+		</properties>
+	</rule>
+	<!--
+		Attributes should not be grouped; the autofix for this has some
+		whitespace issues, fixed by my AttributeAlignment sniff
+	-->
+	<rule ref="SlevomatCodingStandard.Attributes.DisallowAttributesJoining" />
+	<!--
+		Not using Attributes.DisallowMultipleAttributesPerLine since it has a
+		weird autofix that adds lines between the attributes, and should be
+		caught by my alignment sniff
+	-->
+	<rule ref="SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation" />
+	<rule ref="SlevomatCodingStandard.Classes.BackedEnumTypeSpacing" />
+	<rule ref="SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition" />
+	<rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch" />
+	<rule ref="SlevomatCodingStandard.Functions.StrictCall" />
+	<rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse" />
+	<rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
+		<properties>
+			<property name="linesCountBeforeDeclare" value="0" />
+		</properties>
+	</rule>
+
+</ruleset>
