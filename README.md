@@ -7,6 +7,8 @@ This composer library implements a set of rules for [PHP Codesniffer](https://pa
 It is based on the ruleset provided by the `mediawiki/mediawiki-codesniffer` package,
 but with the MediaWiki-specific parts disabled and some other modifications.
 
+See [docs/rules.txt](docs/rules.txt) for the list of included sniffs.
+
 ## Usage
 
 ```xml

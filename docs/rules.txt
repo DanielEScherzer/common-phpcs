@@ -1,0 +1,191 @@
+
+The DanielEScherzer standard contains 159 sniffs
+
+CommonPhpcs (1 sniff)
+---------------------
+  CommonPhpcs.Attributes.AttributeAlignment
+
+Generic (41 sniffs)
+-------------------
+  Generic.Arrays.DisallowLongArraySyntax
+  Generic.Classes.DuplicateClassName
+  Generic.CodeAnalysis.AssignmentInCondition
+  Generic.CodeAnalysis.EmptyPHPStatement
+  Generic.CodeAnalysis.ForLoopShouldBeWhileLoop
+  Generic.CodeAnalysis.JumbledIncrementer
+  Generic.CodeAnalysis.RequireExplicitBooleanOperatorPrecedence
+  Generic.CodeAnalysis.UnconditionalIfStatement
+  Generic.CodeAnalysis.UnnecessaryFinalModifier
+  Generic.ControlStructures.DisallowYodaConditions
+  Generic.ControlStructures.InlineControlStructure
+  Generic.Files.ByteOrderMark
+  Generic.Files.LineEndings
+  Generic.Files.LineLength
+  Generic.Files.OneObjectStructurePerFile
+  Generic.Formatting.DisallowMultipleStatements
+  Generic.Formatting.MultipleStatementAlignment
+  Generic.Formatting.SpaceAfterCast
+  Generic.Formatting.SpaceAfterNot
+  Generic.Functions.CallTimePassByReference
+  Generic.Functions.FunctionCallArgumentSpacing
+  Generic.Functions.OpeningFunctionBraceKernighanRitchie
+  Generic.NamingConventions.ConstructorName
+  Generic.NamingConventions.UpperCaseConstantName
+  Generic.PHP.BacktickOperator
+  Generic.PHP.CharacterBeforePHPOpeningTag
+  Generic.PHP.DeprecatedFunctions
+  Generic.PHP.DisallowShortOpenTag
+  Generic.PHP.DiscourageGoto
+  Generic.PHP.ForbiddenFunctions
+  Generic.PHP.LowerCaseConstant
+  Generic.PHP.LowerCaseKeyword
+  Generic.PHP.LowerCaseType
+  Generic.PHP.NoSilencedErrors
+  Generic.PHP.SAPIUsage
+  Generic.VersionControl.GitMergeConflict
+  Generic.WhiteSpace.DisallowSpaceIndent
+  Generic.WhiteSpace.IncrementDecrementSpacing
+  Generic.WhiteSpace.LanguageConstructSpacing
+  Generic.WhiteSpace.ScopeIndent
+  Generic.WhiteSpace.SpreadOperatorSpacingAfter
+
+MediaWiki (58 sniffs)
+---------------------
+  MediaWiki.AlternativeSyntax.LeadingZeroInFloat
+  MediaWiki.AlternativeSyntax.UnicodeEscape
+  MediaWiki.Arrays.AlphabeticArraySort
+  MediaWiki.Arrays.TrailingComma
+  MediaWiki.Classes.FullQualifiedClassName
+  MediaWiki.Classes.UnsortedUseStatements
+  MediaWiki.Classes.UnusedUseStatement
+  MediaWiki.Commenting.ClassLevelLicense
+  MediaWiki.Commenting.DocComment
+  MediaWiki.Commenting.EmptyTag
+  MediaWiki.Commenting.FunctionAnnotations
+  MediaWiki.Commenting.FunctionComment
+  MediaWiki.Commenting.IllegalSingleLineComment
+  MediaWiki.Commenting.LicenseComment
+  MediaWiki.Commenting.PhpunitAnnotations
+  MediaWiki.Commenting.PropertyDocumentation
+  MediaWiki.Commenting.RedundantVarName
+  MediaWiki.Commenting.VariadicArgument
+  MediaWiki.ControlStructures.MissingElseBetweenBrackets
+  MediaWiki.ExtraCharacters.ParenthesesAroundKeyword
+  MediaWiki.Files.ClassMatchesFilename
+  MediaWiki.NamingConventions.LowerCamelFunctionsName
+  MediaWiki.NamingConventions.PrefixedGlobalFunctions
+  MediaWiki.NamingConventions.ValidGlobalName
+  MediaWiki.PHPUnit.AssertCount
+  MediaWiki.PHPUnit.AssertEmpty
+  MediaWiki.PHPUnit.AssertEquals
+  MediaWiki.PHPUnit.AssertionOrder
+  MediaWiki.PHPUnit.DeprecatedPHPUnitMethods
+  MediaWiki.PHPUnit.MockBoilerplate
+  MediaWiki.PHPUnit.PHPUnitClassUsage
+  MediaWiki.PHPUnit.PHPUnitTypeHints
+  MediaWiki.PHPUnit.SetMethods
+  MediaWiki.PHPUnit.SpecificAssertions
+  MediaWiki.Usage.AssignmentInReturn
+  MediaWiki.Usage.DirUsage
+  MediaWiki.Usage.FinalPrivate
+  MediaWiki.Usage.ForbiddenFunctions
+  MediaWiki.Usage.InArrayUsage
+  MediaWiki.Usage.IsNull
+  MediaWiki.Usage.MagicConstantClosure
+  MediaWiki.Usage.NestedFunctions
+  MediaWiki.Usage.NestedInlineTernary
+  MediaWiki.Usage.NullableType
+  MediaWiki.Usage.PlusStringConcat
+  MediaWiki.Usage.ReferenceThis
+  MediaWiki.Usage.StaticClosure
+  MediaWiki.VariableAnalysis.UnusedGlobalVariables
+  MediaWiki.WhiteSpace.EmptyLinesBetweenUse
+  MediaWiki.WhiteSpace.MultipleEmptyLines
+  MediaWiki.WhiteSpace.OpeningKeywordParenthesis
+  MediaWiki.WhiteSpace.SpaceAfterClosure
+  MediaWiki.WhiteSpace.SpaceBeforeBracket
+  MediaWiki.WhiteSpace.SpaceBeforeClassBrace
+  MediaWiki.WhiteSpace.SpaceBeforeSingleLineComment
+  MediaWiki.WhiteSpace.SpaceyParenthesis
+  MediaWiki.WhiteSpace.UnaryMinusSpacing
+  MediaWiki.WhiteSpace.WhiteSpaceBeforeFunction
+
+PEAR (1 sniff)
+--------------
+  PEAR.Functions.ValidDefaultValue
+
+PSR2 (9 sniffs)
+---------------
+  PSR2.Classes.ClassDeclaration
+  PSR2.Classes.PropertyDeclaration
+  PSR2.ControlStructures.ElseIfDeclaration
+  PSR2.ControlStructures.SwitchDeclaration
+  PSR2.Files.EndFileNewline
+  PSR2.Methods.FunctionClosingBrace
+  PSR2.Methods.MethodDeclaration
+  PSR2.Namespaces.NamespaceDeclaration
+  PSR2.Namespaces.UseDeclaration
+
+PSR12 (6 sniffs)
+----------------
+  PSR12.Files.ImportStatement
+  PSR12.Functions.NullableTypeDeclaration
+  PSR12.Functions.ReturnTypeDeclaration
+  PSR12.Keywords.ShortFormTypeKeywords
+  PSR12.Properties.ConstantVisibility
+  PSR12.Traits.UseDeclaration
+
+SlevomatCodingStandard (9 sniffs)
+---------------------------------
+  SlevomatCodingStandard.Arrays.DisallowImplicitArrayCreation
+  SlevomatCodingStandard.Attributes.AttributesOrder
+  SlevomatCodingStandard.Attributes.DisallowAttributesJoining
+  SlevomatCodingStandard.Classes.BackedEnumTypeSpacing
+  SlevomatCodingStandard.Classes.DisallowMultiConstantDefinition
+  SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch
+  SlevomatCodingStandard.Functions.StrictCall
+  SlevomatCodingStandard.Namespaces.DisallowGroupUse
+  SlevomatCodingStandard.TypeHints.DeclareStrictTypes
+
+Squiz (22 sniffs)
+-----------------
+  Squiz.Classes.SelfMemberReference
+  Squiz.Classes.ValidClassName
+  Squiz.ControlStructures.ControlSignature
+  Squiz.CSS.SemicolonSpacing
+  Squiz.Functions.FunctionDeclarationArgumentSpacing
+  Squiz.Functions.FunctionDuplicateArgument
+  Squiz.Operators.ValidLogicalOperators
+  Squiz.PHP.NonExecutableCode
+  Squiz.Scope.MemberVarScope
+  Squiz.Scope.MethodScope
+  Squiz.Scope.StaticThisUsage
+  Squiz.Strings.ConcatenationSpacing
+  Squiz.WhiteSpace.CastSpacing
+  Squiz.WhiteSpace.FunctionOpeningBraceSpace
+  Squiz.WhiteSpace.FunctionSpacing
+  Squiz.WhiteSpace.LogicalOperatorSpacing
+  Squiz.WhiteSpace.ObjectOperatorSpacing
+  Squiz.WhiteSpace.OperatorSpacing
+  Squiz.WhiteSpace.ScopeClosingBrace
+  Squiz.WhiteSpace.ScopeKeywordSpacing
+  Squiz.WhiteSpace.SemicolonSpacing
+  Squiz.WhiteSpace.SuperfluousWhitespace
+
+Universal (11 sniffs)
+---------------------
+  Universal.CodeAnalysis.NoDoubleNegative
+  Universal.Constants.LowercaseClassResolutionKeyword
+  Universal.Constants.UppercaseMagicConstants
+  Universal.ControlStructures.DisallowAlternativeSyntax
+  Universal.Lists.DisallowLongListSyntax
+  Universal.Operators.TypeSeparatorSpacing
+  Universal.PHP.LowercasePHPTag
+  Universal.UseStatements.KeywordSpacing
+  Universal.UseStatements.LowercaseFunctionConst
+  Universal.UseStatements.NoUselessAliases
+  Universal.WhiteSpace.CommaSpacing
+
+Zend (1 sniff)
+--------------
+  Zend.Files.ClosingTag
