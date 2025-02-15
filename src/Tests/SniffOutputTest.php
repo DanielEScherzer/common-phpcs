@@ -24,6 +24,7 @@ class SniffOutputTest extends TestCase {
 
 	private string $standard;
 	private Config $phpcsConfig;
+	private const REPORT_WIDTH = 80;
 
 	protected function setUp(): void {
 		parent::setUp();
@@ -36,7 +37,7 @@ class SniffOutputTest extends TestCase {
 		// for some reason passing `--tab-width=4` doesn't work, set manually
 		$config->tabWidth = 4;
 		// same with passing --report-width
-		$config->reportWidth = 80;
+		$config->reportWidth = self::REPORT_WIDTH;
 
 		$this->phpcsConfig = $config;
 	}
@@ -69,12 +70,28 @@ class SniffOutputTest extends TestCase {
 		$this->assertFileExists( $reportFile );
 		$reportFileContents = file_get_contents( $reportFile );
 		// Use a placeholder `{dir}` so that tests pass regardless of where
-		// in the filesystem the code is located.
-		$reportFileContents = str_replace(
-			"FILE: {dir}/",
-			"FILE: " . __DIR__ . "/",
-			$reportFileContents
-		);
+		// in the filesystem the code is located. But, codesniffer will trim
+		// the file name used if it would otherwise exceed the report width,
+		// see `PHP_CodeSniffer\Reports\Full::generateFileReport()` (as of
+		// codesniffer 3.11.3)
+		if ( strlen( $file ) <= ( self::REPORT_WIDTH - 6 ) ) {
+			$reportFileContents = str_replace(
+				"FILE: {dir}/",
+				"FILE: " . __DIR__ . "/",
+				$reportFileContents
+			);
+		} else {
+			$dotdotdotDir = '...' . substr(
+				__DIR__,
+				strlen( $file ) - ( self::REPORT_WIDTH - 6 )
+			);
+
+			$reportFileContents = str_replace(
+				"FILE: {dir}/",
+				"FILE: " . $dotdotdotDir . "/",
+				$reportFileContents
+			);
+		}
 		$this->assertSame( trim( $reportFileContents ), trim( $report ) );
 
 		// .fixed file must exist and match the fixed output if there are
