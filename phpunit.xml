@@ -14,7 +14,7 @@
 >
 	<testsuites>
 		<testsuite name="phpcs">
-			<file>./src/Tests/SniffOutputTest.php</file>
+			<directory>./src/Tests</directory>
 		</testsuite>
 	</testsuites>
 </phpunit>
