@@ -2,7 +2,7 @@
 declare( strict_types = 1 );
 
 function usesDeprecated() {
-	lcg_value();
+	utf8_encode( "foo" );
 }
 
 #[FirstAttrib]

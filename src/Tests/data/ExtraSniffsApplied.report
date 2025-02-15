@@ -2,7 +2,7 @@ FILE: {dir}/data/ExtraSniffsApplied.php
 --------------------------------------------------------------------------------
 FOUND 2 ERRORS AFFECTING 2 LINES
 --------------------------------------------------------------------------------
- 5 | ERROR | [ ] Function lcg_value() has been deprecated
+ 5 | ERROR | [ ] Function utf8_encode() has been deprecated
    |       |     (Generic.PHP.DeprecatedFunctions.Deprecated)
  8 | ERROR | [x] 2 attributes are joined.
    |       |     (SlevomatCodingStandard.Attributes.DisallowAttributesJoining.DisallowedAttributesJoining)
