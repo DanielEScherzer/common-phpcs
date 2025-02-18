@@ -1,16 +1,17 @@
 
-The DanielEScherzer standard contains 159 sniffs
+The DanielEScherzer standard contains 166 sniffs
 
 CommonPhpcs (1 sniff)
 ---------------------
   CommonPhpcs.Attributes.AttributeAlignment
 
-Generic (41 sniffs)
+Generic (43 sniffs)
 -------------------
   Generic.Arrays.DisallowLongArraySyntax
   Generic.Classes.DuplicateClassName
   Generic.CodeAnalysis.AssignmentInCondition
   Generic.CodeAnalysis.EmptyPHPStatement
+  Generic.CodeAnalysis.EmptyStatement
   Generic.CodeAnalysis.ForLoopShouldBeWhileLoop
   Generic.CodeAnalysis.JumbledIncrementer
   Generic.CodeAnalysis.RequireExplicitBooleanOperatorPrecedence
@@ -19,6 +20,7 @@ Generic (41 sniffs)
   Generic.ControlStructures.DisallowYodaConditions
   Generic.ControlStructures.InlineControlStructure
   Generic.Files.ByteOrderMark
+  Generic.Files.InlineHTML
   Generic.Files.LineEndings
   Generic.Files.LineLength
   Generic.Files.OneObjectStructurePerFile
@@ -114,6 +116,10 @@ PEAR (1 sniff)
 --------------
   PEAR.Functions.ValidDefaultValue
 
+PSR1 (1 sniff)
+--------------
+  PSR1.Files.SideEffects
+
 PSR2 (9 sniffs)
 ---------------
   PSR2.Classes.ClassDeclaration
@@ -126,8 +132,9 @@ PSR2 (9 sniffs)
   PSR2.Namespaces.NamespaceDeclaration
   PSR2.Namespaces.UseDeclaration
 
-PSR12 (6 sniffs)
+PSR12 (7 sniffs)
 ----------------
+  PSR12.Classes.ClassInstantiation
   PSR12.Files.ImportStatement
   PSR12.Functions.NullableTypeDeclaration
   PSR12.Functions.ReturnTypeDeclaration
@@ -172,13 +179,16 @@ Squiz (22 sniffs)
   Squiz.WhiteSpace.SemicolonSpacing
   Squiz.WhiteSpace.SuperfluousWhitespace
 
-Universal (11 sniffs)
+Universal (14 sniffs)
 ---------------------
   Universal.CodeAnalysis.NoDoubleNegative
   Universal.Constants.LowercaseClassResolutionKeyword
   Universal.Constants.UppercaseMagicConstants
   Universal.ControlStructures.DisallowAlternativeSyntax
   Universal.Lists.DisallowLongListSyntax
+  Universal.NamingConventions.NoReservedKeywordParameterNames
+  Universal.Operators.DisallowLogicalAndOr
+  Universal.Operators.StrictComparisons
   Universal.Operators.TypeSeparatorSpacing
   Universal.PHP.LowercasePHPTag
   Universal.UseStatements.KeywordSpacing
