@@ -14,7 +14,7 @@ See [docs/rules.txt](docs/rules.txt) for the list of included sniffs.
 ```xml
 <?xml version="1.0"?>
 <ruleset>
-	<rule ref="./vendor/danielescherzer/phpcs/src"/>
+	<rule ref="./vendor/danielescherzer/common-phpcs/src"/>
 	<file>.</file>
 	<arg name="extensions" value="php"/>
 	<arg name="encoding" value="UTF-8"/>
