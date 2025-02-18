@@ -8,7 +8,7 @@ on:
 
 jobs:
   lint:
-    name: Lint with PHPCS
+    name: Lint with parallel-lint and PHPCS
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,6 +22,9 @@ jobs:
 
       - name: Install composer dependencies
         run: composer install
+
+      - name: Run parallel-lint
+        run: vendor/bin/parallel-lint . --exclude vendor
 
       - name: Run phpcs
         run: vendor/bin/phpcs -p -s
