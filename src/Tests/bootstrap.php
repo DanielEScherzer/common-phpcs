@@ -1,6 +1,8 @@
 <?php
 declare( strict_types = 1 );
 
+// phpcs:disable PSR1.Files.SideEffects.FoundWithSymbols
+
 require_once __DIR__ . '/../../vendor/autoload.php';
 
 // For some reason the classes from codesniffer need to be loaded separately

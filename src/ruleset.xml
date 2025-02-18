@@ -48,7 +48,16 @@
 	</rule>
 
 	<!-- Some extra rules that seem useful from PHPCS core -->
+	<rule ref="Generic.CodeAnalysis.EmptyStatement" />
+	<rule ref="Generic.Files.InlineHTML" />
 	<rule ref="Generic.PHP.DeprecatedFunctions" />
+	<rule ref="PSR1.Files.SideEffects.FoundWithSymbols" />
+	<rule ref="PSR12.Classes.ClassInstantiation.MissingParentheses" />
+
+	<!-- phpcsstandards/phpcsextra rules -->
+	<rule ref="Universal.NamingConventions.NoReservedKeywordParameterNames" />
+	<rule ref="Universal.Operators.DisallowLogicalAndOr" />
+	<rule ref="Universal.Operators.StrictComparisons" />
 
 	<!-- SlevomatCodingStandard rules -->
 	<rule ref="SlevomatCodingStandard.Attributes.AttributesOrder">
