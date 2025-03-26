@@ -1,7 +1,7 @@
 <?php
 declare( strict_types = 1 );
 
-// phpcs:disable MediaWiki.Commenting
+// phpcs:disable MediaWiki.Commenting,Squiz.WhiteSpace.FunctionSpacing.Before
 // phpcs:disable MediaWiki.Files.ClassMatchesFilename
 // phpcs:disable Generic.WhiteSpace.ScopeIndent
 
@@ -51,12 +51,20 @@ function demo4() {
 function demo5() {
 }
 
+  #[TwoSpaces]
+function demo6() {
+}
+
 // Not fixable
 #[MyAttribute]
 
-/* ignored */ function demo6() {
+/* ignored */ function demo7() {
+}
+
+/* not fixable */ #[MyAttribute]
+function demo8() {
 }
 
 // Not covered
-#[MyAttribute] function demo7() {
+#[MyAttribute] function demo9() {
 }

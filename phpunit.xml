@@ -17,4 +17,14 @@
 			<directory>./src/Tests</directory>
 		</testsuite>
 	</testsuites>
+	<source>
+		<include>
+			<directory>./src/Sniffs</directory>
+		</include>
+	</source>
+	<coverage includeUncoveredFiles="true">
+		<report>
+			<html outputDirectory="html-coverage" />
+		</report>
+	</coverage>
 </phpunit>

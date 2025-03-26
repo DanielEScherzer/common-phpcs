@@ -92,12 +92,10 @@ class AttributeAlignmentSniff implements Sniff {
 			);
 		}
 
-		// Clear all of the other whitespace tokens before the attribute; this
-		// works for both cases because if the attribute was the start of the
-		// line then $iii will start at $stackPtr and the loop never runs
-		for ( $iii = $targetLineStart; $iii < $stackPtr - 1; $iii++ ) {
-			$phpcsFile->fixer->replaceToken( $iii, '' );
-		}
+		// Apparently we don't need to worry about the other whitespace tokens
+		// that came before the stack pointer, I could not figure out a way to
+		// trigger needing to remove them, so the code for that was removed
+		// since it was untested and potentially unneeded.
 
 		$phpcsFile->fixer->endChangeset();
 	}
@@ -117,7 +115,11 @@ class AttributeAlignmentSniff implements Sniff {
 			true
 		);
 		if ( $prevNonWhitespace === false ) {
+			// There were no tokens before this in the file, should be
+			// impossible
+			// @codeCoverageIgnoreStart
 			return false;
+			// @codeCoverageIgnoreEnd
 		}
 		$tokens = $phpcsFile->getTokens();
 		$stackPtrLine = $tokens[$stackPtr]['line'];
