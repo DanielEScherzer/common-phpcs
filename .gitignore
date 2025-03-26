@@ -4,3 +4,6 @@
 
 # Tests
 .phpunit.result.cache
+
+# Code coverage report
+html-coverage

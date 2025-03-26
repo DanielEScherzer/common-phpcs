@@ -27,7 +27,7 @@
 	"scripts": {
 		"parallel-lint": "parallel-lint . --exclude vendor",
 		"phpcs": "phpcs -p -s",
-		"phpunit": "phpunit",
+		"phpunit": "php -d extension=pcov.so -d pcov.enabled=1 -d pcov.directory=. vendor/bin/phpunit",
 		"lint": [
 			"@parallel-lint",
 			"@phpcs"
