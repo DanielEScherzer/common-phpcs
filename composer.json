@@ -1,7 +1,7 @@
 {
 	"name": "danielescherzer/common-phpcs",
 	"description": "PHP CodeSniffer standards, partially based on mediawiki/mediawiki-codesniffer",
-	"type": "library",
+	"type": "phpcodesniffer-standard",
 	"authors": [
 		{
 			"name": "Daniel E Scherzer",
