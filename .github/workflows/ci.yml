@@ -51,5 +51,12 @@ jobs:
       - name: Install composer dependencies
         run: composer install
 
-      - name: Run phpunit
+      # Work around https://github.com/PHPCSStandards/PHP_CodeSniffer/issues/1286
+      - name: Run phpunit (with coverage)
+        if: ${{ matrix.php == '8.4' }}
         run: vendor/bin/phpunit
+
+      # Work around https://github.com/PHPCSStandards/PHP_CodeSniffer/issues/1286
+      - name: Run phpunit (no coverage)
+        if: ${{ matrix.php == '8.3' }}
+        run: vendor/bin/phpunit --no-coverage

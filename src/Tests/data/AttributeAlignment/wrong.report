@@ -1,6 +1,6 @@
 FILE: {dir}/data/AttributeAlignment/wrong.php
 --------------------------------------------------------------------------------
-FOUND 0 ERRORS AND 16 WARNINGS AFFECTING 16 LINES
+FOUND 0 ERRORS AND 17 WARNINGS AFFECTING 17 LINES
 --------------------------------------------------------------------------------
   8 | WARNING | [x] Attributes should be aligned with their targets
     |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
@@ -33,6 +33,8 @@ FOUND 0 ERRORS AND 16 WARNINGS AFFECTING 16 LINES
  59 | WARNING | [ ] Attributes should be aligned with their targets
     |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
  64 | WARNING | [ ] Attributes should be aligned with their targets
+    |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
+ 72 | WARNING | [ ] Attributes should be aligned with their targets
     |         |     (CommonPhpcs.Attributes.AttributeAlignment.NotAligned)
 --------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 14 MARKED SNIFF VIOLATIONS AUTOMATICALLY

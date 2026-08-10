@@ -1,11 +1,11 @@
 
-The DanielEScherzer standard contains 166 sniffs
+The DanielEScherzer standard contains 168 sniffs
 
 CommonPhpcs (1 sniff)
 ---------------------
   CommonPhpcs.Attributes.AttributeAlignment
 
-Generic (43 sniffs)
+Generic (42 sniffs)
 -------------------
   Generic.Arrays.DisallowLongArraySyntax
   Generic.Classes.DuplicateClassName
@@ -28,7 +28,6 @@ Generic (43 sniffs)
   Generic.Formatting.MultipleStatementAlignment
   Generic.Formatting.SpaceAfterCast
   Generic.Formatting.SpaceAfterNot
-  Generic.Functions.CallTimePassByReference
   Generic.Functions.FunctionCallArgumentSpacing
   Generic.Functions.OpeningFunctionBraceKernighanRitchie
   Generic.NamingConventions.ConstructorName
@@ -51,7 +50,7 @@ Generic (43 sniffs)
   Generic.WhiteSpace.ScopeIndent
   Generic.WhiteSpace.SpreadOperatorSpacingAfter
 
-MediaWiki (58 sniffs)
+MediaWiki (61 sniffs)
 ---------------------
   MediaWiki.AlternativeSyntax.LeadingZeroInFloat
   MediaWiki.AlternativeSyntax.UnicodeEscape
@@ -60,7 +59,10 @@ MediaWiki (58 sniffs)
   MediaWiki.Classes.FullQualifiedClassName
   MediaWiki.Classes.UnsortedUseStatements
   MediaWiki.Classes.UnusedUseStatement
+  MediaWiki.Commenting.ClassAnnotations
+  MediaWiki.Commenting.ClassDocumentation
   MediaWiki.Commenting.ClassLevelLicense
+  MediaWiki.Commenting.CommentBeforeClass
   MediaWiki.Commenting.DocComment
   MediaWiki.Commenting.EmptyTag
   MediaWiki.Commenting.FunctionAnnotations
@@ -68,6 +70,7 @@ MediaWiki (58 sniffs)
   MediaWiki.Commenting.IllegalSingleLineComment
   MediaWiki.Commenting.LicenseComment
   MediaWiki.Commenting.PhpunitAnnotations
+  MediaWiki.Commenting.PropertyAnnotations
   MediaWiki.Commenting.PropertyDocumentation
   MediaWiki.Commenting.RedundantVarName
   MediaWiki.Commenting.VariadicArgument
@@ -75,6 +78,7 @@ MediaWiki (58 sniffs)
   MediaWiki.ExtraCharacters.ParenthesesAroundKeyword
   MediaWiki.Files.ClassMatchesFilename
   MediaWiki.NamingConventions.LowerCamelFunctionsName
+  MediaWiki.NamingConventions.NamespaceName
   MediaWiki.NamingConventions.PrefixedGlobalFunctions
   MediaWiki.NamingConventions.ValidGlobalName
   MediaWiki.PHPUnit.AssertCount
@@ -89,12 +93,10 @@ MediaWiki (58 sniffs)
   MediaWiki.PHPUnit.SpecificAssertions
   MediaWiki.Usage.AssignmentInReturn
   MediaWiki.Usage.DirUsage
-  MediaWiki.Usage.FinalPrivate
   MediaWiki.Usage.ForbiddenFunctions
   MediaWiki.Usage.InArrayUsage
   MediaWiki.Usage.IsNull
   MediaWiki.Usage.MagicConstantClosure
-  MediaWiki.Usage.NestedFunctions
   MediaWiki.Usage.NestedInlineTernary
   MediaWiki.Usage.NullableType
   MediaWiki.Usage.PlusStringConcat
@@ -159,10 +161,10 @@ Squiz (22 sniffs)
   Squiz.Classes.SelfMemberReference
   Squiz.Classes.ValidClassName
   Squiz.ControlStructures.ControlSignature
-  Squiz.CSS.SemicolonSpacing
   Squiz.Functions.FunctionDeclarationArgumentSpacing
   Squiz.Functions.FunctionDuplicateArgument
   Squiz.Operators.ValidLogicalOperators
+  Squiz.PHP.InnerFunctions
   Squiz.PHP.NonExecutableCode
   Squiz.Scope.MemberVarScope
   Squiz.Scope.MethodScope
