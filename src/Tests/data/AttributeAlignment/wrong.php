@@ -68,3 +68,7 @@ function demo8() {
 // Not covered
 #[MyAttribute] function demo9() {
 }
+
+#[First] #[Second]
+function demo10() {
+}

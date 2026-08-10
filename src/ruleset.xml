@@ -21,7 +21,7 @@
 		<!-- With no prefixes configured, sniff will do nothing but be available
 			if I want to enable it for a project -->
 		<properties>
-			<property name="allowedPrefixes" type="array" value="" />
+			<property name="allowedPrefixes" type="array"/>
 		</properties>
 	</rule>
 
@@ -29,7 +29,7 @@
 		<!-- With no prefixes configured, sniff will do nothing but be available
 			if I want to enable it for a project -->
 		<properties>
-			<property name="allowedPrefixes" type="array" value="" />
+			<property name="allowedPrefixes" type="array"/>
 		</properties>
 	</rule>
 

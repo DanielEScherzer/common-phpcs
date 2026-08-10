@@ -5,8 +5,7 @@ function usesDeprecated() {
 	utf8_encode( "foo" );
 }
 
-#[FirstAttrib]
-#[SecondAttrib]
+#[FirstAttrib] #[SecondAttrib]
 function doNothing() {
 	$a = true;
 }
